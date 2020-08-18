@@ -1,0 +1,76 @@
+/* 全域定義 */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #000000ec;
+}
+/* title 樣式與排版 */
+.title {
+	color: whitesmoke;
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+}
+.title.zh {
+	font-family: "Source Han Sans CN", sans-serif;
+	font-size: 64px;
+	letter-spacing: 8px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.title.en {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	word-spacing: 7 px;
+	padding-bottom: 50px;
+}
+/* Navbar 樣式 */
+.bar > ul a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: black solid 0.7px;
+	color: whitesmoke;
+	background: #19378bf1;
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	height: 40px;
+	text-decoration: none;
+	text-transform: capitalize;
+	cursor: pointer;
+	transition: color 0.4s linear;
+}
+.bar ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.bar ul li {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.bar a:hover {
+	box-shadow: 0 0 1px #100db8ed, 0 0 3px #2522bbd3, 0 0 6px #4341c2ed;
+	color: #2474f5;
+	transition-delay: 40ms;
+}
+.bar li:hover .dropdown li {
+	display: block;
+}
+.dropdown {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.dropdown li {
+	display: none;
+	position: relative;
+}
